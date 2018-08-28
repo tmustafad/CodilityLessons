@@ -21,9 +21,9 @@ public class Dominator {
 
 		}
 
-		if (map.size() == 1)
-			return map.entrySet().stream().filter(entry -> entry.getValue() != null).collect(Collectors.toList()).get(0)
-					.getKey();
+		//if (map.size() == 1)
+		//	return map.entrySet().stream().filter(entry -> entry.getValue() != null).collect(Collectors.toList()).get(0)
+		//			.getKey();
 
 		List<Entry<Integer, Integer>> entries = map.entrySet().stream().filter(x -> x.getValue() > winningScore)
 				.collect(Collectors.toList());
